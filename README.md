@@ -5,8 +5,10 @@
 ルートディレクトリ(app/の1つ上の階層)の位置で
 
 ```
-docker-compose build --no-cache
-docker-compose up
+make build
+make up
+make migrate
+make seed(WIP)
 ```
 
 ## 環境

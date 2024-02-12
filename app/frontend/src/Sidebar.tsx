@@ -16,6 +16,9 @@ const Sidebar = () => {
           <a href="/profile">プロフィール</a>
         </li>
         <li>
+          <a href="/histories">経歴</a>
+        </li>
+        <li>
           <a href="/archives">成果物</a>
         </li>
       </ul>

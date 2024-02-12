@@ -3,7 +3,8 @@
   width: 20%;
   height: 100vh;
   float: left;
-  border: 2px solid;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
   h1 {
     border-width: 0 0 2px 0;
     border-style: solid;
