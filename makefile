@@ -15,5 +15,8 @@ migrate:
 rollback:
 	docker-compose run web bundle exec rails db:rollback
 
+seed:
+	docker-compose run web bundle exec rails seed_fu
+
 console:
 	docker-compose run web bundle exec rails c

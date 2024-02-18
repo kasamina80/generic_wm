@@ -15,7 +15,15 @@ const App = (props: Props) => {
     <>
       <Sidebar />
       <div className="App">
-        Hello profile!
+        <dl>
+          <dt>名前:</dt>
+          <dd>
+            笠波湊帆(かさなみみなほ)<br />
+            <span className="tooltip" data-tooltip="イントネーションは「日野森」「暁山」と同じで「青柳」「草薙」とは異なります。">(愛称: かさみな)</span>
+          </dd>
+          <dt>GitHub:</dt>
+          <dd>@kasamina80</dd>
+        </dl>
       </div>
     </>
   );

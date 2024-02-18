@@ -20,6 +20,61 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+dt {
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+
+/* TODO: replace this with Bootstrap */
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+/* ツールチップ全体の設定 */
+.tooltip::before,
+.tooltip::after {
+  position: absolute;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+/* 吹き出しのひげ部分 */
+.tooltip::before {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  top: 10px;
+  left: 45px;
+}
+
+/* 吹き出しの本体 */
+.tooltip::after {
+  content: attr(data-tooltip);
+  display: block;
+  padding: 7px 13px;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  top: 30px;
+  left: -60px;
+  width: 200px;
+}
+
+/* マウスホバーしたときの設定 */
+.tooltip:hover::before{
+  top: 16px;
+  opacity: 0.9;
+}
+
+.tooltip:hover::after{
+  top: 36px;
+  opacity: 0.9;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
