@@ -1,3 +1,3 @@
 class History < ApplicationRecord
-  enum type: { it_engineer: 0, tba: 1 }
+  enum work_type: { it_engineer: 0, idol: 1 }
 end

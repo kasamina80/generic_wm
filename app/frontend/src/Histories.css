@@ -1,0 +1,7 @@
+h2 {
+  font-size: calc(1.5rem + 0.9vw);
+}
+ul.history-list {
+  width: 60%;
+  left: 30%;
+}
