@@ -1,7 +1,25 @@
 h2 {
   font-size: calc(1.5rem + 0.9vw);
+  margin-top: 0;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 ul.history-list {
   width: 60%;
   left: 30%;
+}
+.kasamina {
+  font-size: 1.25rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+.history-table-wrapper {
+  display: flex;
+  justify-content: center;
+  table {
+    text-align: left;
+    td:nth-child(2) {
+      padding-left: 1rem;
+    }
+  }
 }

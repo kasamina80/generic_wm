@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import '../../src/index.css'
-import '../../src/App.css'
+import '../../src/App.scss'
 import Sidebar from '../../src/Sidebar.tsx'
 
 type Props = {

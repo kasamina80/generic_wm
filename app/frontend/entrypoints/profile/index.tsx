@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import '../../src/index.css'
-import '../../src/App.css'
+import '../../src/App.scss'
 import Sidebar from '../../src/Sidebar.tsx'
 // import { Tooltip } from 'react-bootstrap';
 
@@ -20,7 +20,7 @@ const App = (props: Props) => {
           <dt>名前:</dt>
           <dd>
             笠波湊帆(かさなみみなほ)<br />
-            <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="イントネーションは「日野森」「暁山」と同じで「青柳」「草薙」とは異なります。">(愛称: かさみな)</span>
+            <span data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="right" data-bs-title="イントネーションは「日野森」「暁山」と同じで「青柳」「草薙」とは異なります。">(愛称: かさみな)</span>
           </dd>
           <dt>GitHub:</dt>
           <dd>@kasamina80</dd>

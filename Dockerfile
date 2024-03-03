@@ -13,12 +13,15 @@ WORKDIR /gwm
 COPY Gemfile /gwm/Gemfile
 COPY Gemfile.lock /gwm/Gemfile.lock
 COPY package.json /gwm/package.json
-# ローカルの Gemfile と Gemfile.lock と package.json をコンテナ内のgwm配下にコピー
+COPY package-lock.json /gwm/package-lock.json
+# ローカルの Gemfile と Gemfile.lock と package.json と package-lock.json をコンテナ内のgwm配下にコピー
 
 RUN bundle install
 # コンテナ内にコピーした Gemfile の bundle install
 
 RUN npm install
+# I need this. I don't know why.
+RUN npm install -D sass
 
 COPY . /gwm
 # ローカルのgwm配下のファイルをコンテナ内のgwm配下にコピー

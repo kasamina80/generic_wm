@@ -5,6 +5,10 @@ import ReactRefresh from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: '/',
+  build: {
+    minify: false,
+    outDir: "dist",
+  },
   plugins: [
     RubyPlugin(),
     react(),
@@ -13,5 +17,4 @@ export default defineConfig({
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
-  source_code_dir: 'app/frontend', // Set the path to your source code directory
 })
