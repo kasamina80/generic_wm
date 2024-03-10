@@ -20,7 +20,7 @@ const App = (props: Props) => {
           <dt>名前:</dt>
           <dd>
             笠波湊帆(かさなみみなほ)<br />
-            <span data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="right" data-bs-title="イントネーションは「日野森」「暁山」と同じで「青柳」「草薙」とは異なります。">(愛称: かさみな)</span>
+            <span data-bs-custom-class="acronym-tooltip" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" data-bs-title="イントネーションは「日野森」「暁山」と同じで<br>「青柳」「草薙」とは異なります。">(愛称: かさみな)</span>
           </dd>
           <dt>GitHub:</dt>
           <dd>@kasamina80</dd>

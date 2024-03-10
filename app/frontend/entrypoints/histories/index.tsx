@@ -34,7 +34,12 @@ const historyToDateText = (history: History): string => {
     const end_on_date = new Date(end_on.replaceAll("-", "/"));
     return `${start_on_date.toLocaleDateString()}～${end_on_date.toLocaleDateString()}`
   } else {
-    return `${start_on_date.toLocaleDateString()}～`
+    // TODO: モデルレベルで修理
+    if(history.work_type === "it_engineer") {
+      return `${start_on_date.toLocaleDateString()}～`
+    } else {
+      return `${start_on_date.toLocaleDateString()}`
+    }
   }
 }
 

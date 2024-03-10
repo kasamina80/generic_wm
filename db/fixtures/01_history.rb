@@ -1,6 +1,6 @@
 History.seed(:id,
-  { id: 1, start_on: Date.new(2023, 4, 1), end_on: Date.new(2024, 3, 31), content: "一般向け製品検索サイト開発", work_type: :it_engineer },
-  { id: 2, start_on: Date.new(2024, 4, 1), end_on: Date.new(2024, 7, 31), content: "一般向け言語学習サイト開発", work_type: :it_engineer },
+  { id: 1, start_on: Date.new(2023, 4, 1), end_on: Date.new(2024, 3, 31), content: "一般向けデータ分析サイト開発", work_type: :it_engineer },
+  { id: 2, start_on: Date.new(2024, 4, 1), end_on: Date.new(2024, 7, 31), content: "農業従事者向け生産物管理システム開発", work_type: :it_engineer },
   { id: 3, start_on: Date.new(2024, 8, 1), end_on: Date.new(2024, 10, 31), content: "芸能グループ管理システム開発", work_type: :it_engineer },
   { id: 4, start_on: Date.new(2024, 11, 1), end_on: nil, content: "芸能グループ向け告知サイト開発", work_type: :it_engineer },
   { id: 5, start_on: Date.new(2024, 7, 1), content: "MORE MORE TYPE! 発足", work_type: :idol },

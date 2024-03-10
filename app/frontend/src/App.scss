@@ -34,58 +34,22 @@ dt {
   transform: skewX(-15deg);
 }
 
-.custom-tooltip {
-  --bs-tooltip-bg: #CCCCCC;
+.acronym-tooltip {
+  font-size: 0.6em;
+  background-color: #444;
 }
 
-/* TODO: replace this with Bootstrap */
-
-.tooltip {
-  position: relative;
-  cursor: pointer;
-}
-
-/* ツールチップ全体の設定 */
-.tooltip::before,
-.tooltip::after {
+/* Isn't it supposed to be done WITHIN Bootstrap? */
+.acronym-tooltip > .tooltip-arrow::before {
   position: absolute;
-  transition: all 0.3s;
-  opacity: 0;
-}
-
-/* 吹き出しのひげ部分 */
-.tooltip::before {
   content: "";
-  border: 10px solid transparent;
-  border-bottom-color: #fff;
-  top: 10px;
-  left: 45px;
-}
-
-/* 吹き出しの本体 */
-.tooltip::after {
-  content: attr(data-tooltip);
-  display: block;
-  padding: 7px 13px;
-  background: #fff;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #000;
-  top: 30px;
-  left: -60px;
-  width: 200px;
-}
-
-/* マウスホバーしたときの設定 */
-.tooltip:hover::before{
-  top: 16px;
-  opacity: 0.9;
-}
-
-.tooltip:hover::after{
-  top: 36px;
-  opacity: 0.9;
+  border-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+  right: -1px;
+  border-width: calc(0.8rem * .5) 0.4rem calc(0.8rem * .5) 0;
+  border-right-color: #444;
+  top: -0.4rem;
 }
 
 @keyframes logo-spin {

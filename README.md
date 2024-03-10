@@ -6,9 +6,9 @@
 
 ```
 make build
-make up
 make migrate
-make seed(WIP)
+make seed
+make up
 ```
 
 ## 環境
