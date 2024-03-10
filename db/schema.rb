@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_055103) do
     t.date "start_on", null: false
     t.date "end_on"
     t.string "content", null: false
-    t.integer "type", default: 0, null: false
+    t.integer "work_type", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

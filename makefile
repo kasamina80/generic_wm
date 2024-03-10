@@ -3,20 +3,29 @@
 build:
 	docker-compose build
 
+build-no-cache:
+	docker-compose build --no-cache
+
 up:
 	docker-compose up
 
 down:
 	docker-compose down
 
+restart:
+	make down && make up
+
+create:
+	docker-compose run --rm web bundle exec rails db:create
+
 migrate:
-	docker-compose run web bundle exec rails db:migrate
+	docker-compose run --rm web bundle exec rails db:migrate
 
 rollback:
-	docker-compose run web bundle exec rails db:rollback
+	docker-compose run --rm web bundle exec rails db:rollback
 
 seed:
-	docker-compose run web bundle exec rails seed_fu
+	docker-compose run --rm web bundle exec rails db:seed_fu
 
 console:
-	docker-compose run web bundle exec rails c
+	docker-compose run --rm web bundle exec rails c
