@@ -20,6 +20,10 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+ul {
+  list-style: none;
+}
+
 dl {
   margin-top: 0;
   padding-top: 0.5em;
@@ -36,6 +40,7 @@ dt {
 
 .acronym-tooltip {
   font-size: 0.6em;
+  margin-top: 0.7em !important;
   background-color: #444;
 }
 
@@ -49,7 +54,7 @@ dt {
   right: -1px;
   border-width: calc(0.8rem * .5) 0.4rem calc(0.8rem * .5) 0;
   border-right-color: #444;
-  top: -0.4rem;
+  margin-top: -0.65rem;
 }
 
 @keyframes logo-spin {

@@ -1,9 +1,3 @@
-h2 {
-  font-size: calc(1.5rem + 0.9vw);
-  margin-top: 0;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-}
 ul.history-list {
   width: 60%;
   left: 30%;
