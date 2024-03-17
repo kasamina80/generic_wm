@@ -1,4 +1,4 @@
-.PHONY: build up down migrate console
+.PHONY: build build-no-cache up down restart create migrate rollback seed console
 
 build:
 	docker-compose build
