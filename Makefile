@@ -1,9 +1,9 @@
-.PHONY: build build-no-cache up down restart create migrate rollback seed console
+.PHONY: build build--no-cache up down restart create migrate rollback seed console
 
 build:
 	docker-compose build
 
-build-no-cache:
+build--no-cache:
 	docker-compose build --no-cache
 
 up:
