@@ -36,9 +36,9 @@ const historyToDateText = (history: History): string => {
     return `${start_on_date.toLocaleDateString()}～${end_on_date.toLocaleDateString()}`
   } else {
     if(history.point) {
-      return `${start_on_date.toLocaleDateString()}～`
-    } else {
       return `${start_on_date.toLocaleDateString()}`
+    } else {
+      return `${start_on_date.toLocaleDateString()}～`
     }
   }
 }
