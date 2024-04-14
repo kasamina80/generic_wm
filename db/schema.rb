@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_12_055103) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_31_055103) do
   create_table "histories", charset: "utf8mb4", force: :cascade do |t|
     t.date "start_on", null: false
     t.date "end_on"
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_055103) do
     t.integer "work_type", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "point", default: false, null: false, comment: "Whether the event happened at a point of time"
   end
 
 end
