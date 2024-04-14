@@ -10,7 +10,8 @@ type History = {
   start_on: string,
   end_on: string | null,
   content: string,
-  work_type: "it_engineer" | "idol"
+  work_type: "it_engineer" | "idol",
+  point: boolean
 };
 
 type ItEngineerHistory = History & { work_type: "it_engineer" };
@@ -34,11 +35,10 @@ const historyToDateText = (history: History): string => {
     const end_on_date = new Date(end_on.replaceAll("-", "/"));
     return `${start_on_date.toLocaleDateString()}～${end_on_date.toLocaleDateString()}`
   } else {
-    // TODO: モデルレベルで修理
-    if(history.work_type === "it_engineer") {
-      return `${start_on_date.toLocaleDateString()}～`
-    } else {
+    if(history.point) {
       return `${start_on_date.toLocaleDateString()}`
+    } else {
+      return `${start_on_date.toLocaleDateString()}～`
     }
   }
 }
