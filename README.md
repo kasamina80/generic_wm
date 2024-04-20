@@ -20,3 +20,24 @@ make up
 
 ### 開発環境関係
 - Docker Desktop 4.24.2
+
+## トラブルシューティング
+`localhost:3000`を開いてVite関連のエラーになったら
+
+```
+docker exec -it generic_wm-web-1 /bin/bash
+```
+
+もしくは
+
+```
+docker exec -it generic_wm-web-1 /bash
+```
+
+でコンテナに入り
+
+```
+npm install
+```
+
+を実行してください。
