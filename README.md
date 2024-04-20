@@ -14,7 +14,7 @@ make up
 ## 環境
 
 ### プロジェクト関係
-- Rails 7.0.8
+- Rails 7.1.3.2
 - Ruby 3.2.2
 - vite_rails 3.0.17
 
